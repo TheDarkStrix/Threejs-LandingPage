@@ -146,6 +146,12 @@ let targetY = 0;
 const windowHalFx = window.innerWidth / 2;
 const windowHalFy = window.innerHeight / 2;
 
+const updateSphere = (e) => {
+  sphere.position.y = window.scrollY * 0.001;
+};
+
+window.addEventListener("scroll", updateSphere);
+
 const clock = new THREE.Clock();
 
 const tick = () => {
@@ -158,7 +164,7 @@ const tick = () => {
 
   sphere.rotation.y += 0.5 * (targetX - sphere.rotation.y);
   sphere.rotation.x += 0.05 * (targetY - sphere.rotation.x);
-  sphere.rotation.z += -0.05 * (targetY - sphere.rotation.x);
+  sphere.position.z += -0.05 * (targetY - sphere.rotation.x);
 
   // Update Orbital Controls
   // controls.update()
