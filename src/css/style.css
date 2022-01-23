@@ -6,7 +6,7 @@
 html,
 body {
   height: 100vh;
-  font-family: "Poppins";
+  background-color: rgb(24, 24, 24);
 }
 
 .webgl {
