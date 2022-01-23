@@ -34,12 +34,12 @@ scene.add(sphere);
 
 // Lights
 
-const pointLight = new THREE.PointLight(0xffffff, 0.1);
-pointLight.position.set(2, 3, 4);
+const pointLight = new THREE.PointLight(0xffffff, 1.37);
+pointLight.position.set(10, 5, 10);
 scene.add(pointLight);
 
 const pointLight2 = new THREE.PointLight(0xff0000, 2);
-pointLight2.position.set(-1.86, 1, -1.65);
+pointLight2.position.set(-6, 1, 0.2);
 pointLight2.intensity = 10;
 scene.add(pointLight2);
 
